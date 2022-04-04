@@ -79,6 +79,7 @@ The completed app can be assessed [here][10].
 # Streamlit
 ![Streamlit App](images/streamlit.JPG)
 
+- [Link to Streamlit App][10]
 - Checkbox to toggle on/off the showing of recommendations with adult genres
 - User inputs genre preference for the recommendations generated. Only recommendations containing at least 1 of the selected genres will be shown.
 - User inputs favorite manga titles. These titles will be automatically given the maximum rating of 10.
