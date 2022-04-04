@@ -5,9 +5,9 @@ Over in America, it was reported that manga sales made Up 76.71% of all Adult Fi
 
 With more than 100,000 titles to choose from, it can be a very daunting task to enter the world of manga. Even for the veterans, there are always more titles to be discovered.
 
-[1]: https://animehunch.com/japanese-manga-market-increases-by-10-3-in-2021-to-675-9-billion-yen/ "Title"
+[1]: https://animehunch.com/japanese-manga-market-increases-by-10-3-in-2021-to-675-9-billion-yen/ "AnimeHunch"
 
-[2]: https://www.animenewsnetwork.com/news/2022-03-01/npd-bookscan-via-the-beat-manga-made-up-76.71-percent-of-adult-fiction-graphic-novel-sales-in-2021/.182296 "Title"
+[2]: https://www.animenewsnetwork.com/news/2022-03-01/npd-bookscan-via-the-beat-manga-made-up-76.71-percent-of-adult-fiction-graphic-novel-sales-in-2021/.182296 "AnimeNewsNetwork"
 
 # Objective
 [MyAnimeList][3] (MAL) is the world's largest Anime and Manga community.
@@ -16,9 +16,11 @@ It has hundreds of thousands of users in its community that actively rate, share
 
 The objective of this project is to build a user-based manga recommender system by utilizing the rating lists of users on MAL.
 
-[3]: https://myanimelist.net/about.php "Title"
-# Data Dictionary
+The completed app can be assessed [here][10].
 
+[3]: https://myanimelist.net/about.php "MyAnimeList"
+# Data Dictionary
+[10]: https://share.streamlit.io/bryansoh/mangarecommender "Streamlit App"
 
 
 
@@ -55,12 +57,12 @@ The objective of this project is to build a user-based manga recommender system 
 - Baseline Only was the best performing model with a recall@10 score of 0.862
 7. Build and deploy the recommender system using [Streamlit][9]
 
-[4]: https://docs.api.jikan.moe/ "Title"
-[5]: https://myanimelist.net/clubs.php?cid=20081 "Title"
-[6]: https://docs.google.com/document/d/1-6H-agSnqa8Mfmw802UYfGQrceIEnAaEh4uCXAPiX5A/edit "Title"
-[7]: https://github.com/NicolasHug/Surprise "Title"
-[8]: https://surprise.readthedocs.io/en/stable/prediction_algorithms_package.html "Title"
-[9]: https://streamlit.io/ "Title"
+[4]: https://docs.api.jikan.moe/ "Jikan API"
+[5]: https://myanimelist.net/clubs.php?cid=20081 "Recommendation Club"
+[6]: https://docs.google.com/document/d/1-6H-agSnqa8Mfmw802UYfGQrceIEnAaEh4uCXAPiX5A/edit "Deprecating Mangalists"
+[7]: https://github.com/NicolasHug/Surprise "Scikit-Surprise"
+[8]: https://surprise.readthedocs.io/en/stable/prediction_algorithms_package.html "Model Documentation"
+[9]: https://streamlit.io/ "Streamlit"
 
 # Key Findings
 ## Model Selection
