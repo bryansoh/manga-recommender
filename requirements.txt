@@ -3,3 +3,4 @@ pandas==1.2.4
 scikit_surprise==1.1.1
 streamlit==1.7.0
 surprise==0.1
+click==8
