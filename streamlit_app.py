@@ -12,8 +12,8 @@ from surprise import Reader
 from surprise import Dataset
 
 #initialize variables
-reading_no_zero_df = pd.read_csv('../data/reading_no_zero.csv')
-combined_all_info_df = pd.read_csv('../data/combined_all_info_df_clean.csv')
+reading_no_zero_df = pd.read_csv('./data/reading_no_zero.csv')
+combined_all_info_df = pd.read_csv('./data/combined_all_info_df_clean.csv')
 combined_df = pd.DataFrame([],columns = ['user','item','rating'])
 non_adult_genres = ['Drama','Action','Comedy','Sci-Fi','Girls Love','Avant Garde','Horror','Supernatural','Fantasy','Adventure','Romance','Gourmet','Ecchi','Sports','Boys Love','Mystery','Slice of Life','Suspense']
 all_genres = ['Drama','Action','Comedy','Sci-Fi','Girls Love','Avant Garde','Horror','Supernatural','Fantasy','Adventure','Romance','Gourmet','Ecchi','Sports','Boys Love','Mystery','Slice of Life','Suspense', 'Hentai','Erotica']
