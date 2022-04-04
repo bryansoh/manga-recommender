@@ -51,6 +51,10 @@ def Recommend():
 
 
 st.title('This is my manga recommender')
+st.write("By Bryan Soh [GitHub](https://github.com/bryansoh/)")
+st.markdown("[Source code](https://github.com/bryansoh/mangarecommender) | Model from [Scikit-Surprise](https://surprise.readthedocs.io/en/stable/)")
+st.text("")
+st.text("")
 
 agree = st.checkbox('You are above the age of 18 and wish to see adult recommendations as well')
 genres_to_use = non_adult_genres
