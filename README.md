@@ -52,7 +52,7 @@ The completed app can be assessed [here][10].
 5. Scoring models based on recall@k scores
 - Parameters selected for this project are k = 10, and a threshold of >= 7/10 score to be considered a relevant recommendation
 - The scores are the calculated average after 5 folds of cross validation
-- Since the data is unbalanced with 79% of ratings being more than or equals to 7, recall score will give a better measurement of performance
+- Since the data is unbalanced with 84% of ratings being more than or equals to 7, recall score will give a better measurement of performance
 6. Select the best performing model
 - Baseline Only was the best performing model with a recall@10 score of 0.862
 7. Build and deploy the recommender system using [Streamlit][9]
@@ -69,11 +69,11 @@ The completed app can be assessed [here][10].
 ![Model Performance](images/model_performance.JPG)
 - The scores above are calculated with a relevant score threshold of >= 7/10, at k =10
 - The scores are the calculated average after 5 folds of cross validation
-- The data used is unbalanced with 79% of the ratings >= 7. Hence, if the model were to predict every manga title to be relevant, it will still score a 0.79 for precision
+- The data used is unbalanced with 84% of the ratings >= 7. Hence, if the model were to predict every manga title to be relevant, it will still score a 0.84 for precision
 - Hence, recall score will be a fairer measure of performance as it takes into account the number of available relevant recommendations that can be made.
 
 ## Observations:
-- Other than Non-negative Matrix Factorization, all the models scored better than 0.79 for precision@10
+- Other than Non-negative Matrix Factorization and Normal Predictor, all the models scored better than 0.84 for precision@10
 - For the average recall@10 score, Baseline Only is almost 1 full percent higher than the next best performing model
 
 # Streamlit
