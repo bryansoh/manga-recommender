@@ -49,12 +49,12 @@ The completed app can be assessed [here][10].
 - Removed all 0 scores from data; almost 2,000 users only had 0 scores in their rating list
 4. Data Modeling using [scikit-surprise library][7]
 - Details on models used can be found in the [library documentation][8]
-5. Scoring models based on recall@k scores
+5. Scoring models 
 - Parameters selected for this project are k = 10, and a threshold of >= 7/10 score to be considered a relevant recommendation
 - The scores are the calculated average after 5 folds of cross validation
-- Since the data is imbalanced with 84% of ratings being more than or equals to 7, recall score will give a better measurement of performance
+- Baseline model used was random recommendations. The model randomly recommends 10 titles to each user and the scores are calculated from these recommendations
 6. Select the best performing model
-- Baseline Only was the best performing model with a recall@10 score of 0.862
+- Baseline Only was the best performing model with a precision@10 score of 0.909 and recall@10 score of 0.862
 7. Build and deploy the recommender system using [Streamlit][9]
 
 [4]: https://docs.api.jikan.moe/ "Jikan API"
@@ -69,12 +69,11 @@ The completed app can be assessed [here][10].
 ![Model Performance](images/model_performance.JPG)
 - The scores above are calculated with a relevant score threshold of >= 7/10, at k =10
 - The scores are the calculated average after 5 folds of cross validation
-- The data used is imbalanced with 84% of the ratings >= 7. Hence, if the model were to predict every manga title to be relevant, it will still score a 0.84 for precision
-- Hence, recall score will be a fairer measure of performance as it takes into account the number of available relevant recommendations that can be made.
+- The Baseline Only model performed the best and its recall and precision scores are almost a whole 1% higher than the 2nd best model
 
-## Observations:
-- Other than Non-negative Matrix Factorization and Normal Predictor, all the models scored better than 0.84 for precision@10
-- For the average recall@10 score, Baseline Only is almost 1 full percent higher than the next best performing model
+![Baseline Random Recommendations](images/baseline.JPG)
+- The machine learning models all vastly outperformed the baseline model that gives random recommendations
+
 
 # Streamlit
 ![Streamlit App](images/streamlit.JPG)
